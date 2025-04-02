@@ -139,16 +139,75 @@ table {
   --font-sym-title: "Space Mono";
 }
 
+/* Custom themes */
+
+@theme {
+  --color-text1-light: black;
+  --color-text2-light: rgba(0, 0, 0, 0.7);
+  --color-text1-dark: white;
+  --color-text2-dark: rgba(255, 255, 255, 0.7);
+  --color-bg-light: #f2f6ff;
+  --color-bg-dark: #1f1f47;
+}
+
 /* Custom classes */
+
+.color-text1 {
+  @apply text-[var(--color-text1-light)] dark:text-[var(--color-text1-dark)];
+}
+
+.color-text2 {
+  @apply text-[var(--color-text2-light)] dark:text-[var(--color-text2-dark)];
+}
+
+.color-bg {
+  @apply bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)];
+}
 
 .text-wrapper {
   @apply w-full max-w-[360px] grid gap-[30px];
 }
 
-.title {
+.text-title {
   @apply font-bold text-[3.75rem];
 }
 
-.description {
+.text-subtitle {
+  @apply font-bold text-[2.5rem];
+}
+
+.text-thirdtitle {
+  @apply font-bold text-[1.875rem];
+}
+
+.text-intro {
+  @apply font-medium text-[1.5rem] leading-[140%];
+}
+
+.text-main {
+  @apply font-normal text-[1.25rem] leading-[140%];
+}
+
+.text-medium {
+  @apply font-normal text-[1rem] leading-[130%];
+}
+
+.text-caption {
+  @apply font-normal text-[0.93rem];
+}
+
+.text-caption-bold {
+  @apply font-bold text-[0.93rem] uppercase;
+}
+
+.text-small {
+  @apply font-normal text-[0.812rem];
+}
+
+.text-small-bold {
+  @apply font-bold text-[0.812rem] uppercase;
+}
+
+.text-description {
   @apply leading-[130%] text-balance;
 }

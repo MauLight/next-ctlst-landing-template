@@ -22,14 +22,14 @@ export default function Hero() {
                 <div className="col-span-1">
 
                     <div className="text-wrapper">
-                        <h1 className="title">
+                        <h1 className="text-title color-text1">
                             Design
                             <br />
                             and code
                             <br />
                             React apps
                         </h1>
-                        <p className="description">
+                        <p className="text-medium text-balance">
                             Don’t skip design. Learn design and code, by building real apps with
                             React and Swift. Complete courses about the best tools.
                         </p>

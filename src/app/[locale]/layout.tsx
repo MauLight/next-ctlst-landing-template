@@ -24,7 +24,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className='bg-black pb-22'>
+      <body className='color-bg pb-22'>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
