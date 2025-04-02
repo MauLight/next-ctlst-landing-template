@@ -82,8 +82,6 @@ time,
 mark,
 audio,
 video {
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -139,4 +137,18 @@ table {
   --color-sym-text-secondary: #a1a1a1;
 
   --font-sym-title: "Space Mono";
+}
+
+/* Custom classes */
+
+.text-wrapper {
+  @apply w-full max-w-[360px] grid gap-[30px];
+}
+
+.title {
+  @apply font-bold text-[3.75rem];
+}
+
+.description {
+  @apply leading-[130%] text-balance;
 }
